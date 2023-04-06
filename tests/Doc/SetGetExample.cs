@@ -1,4 +1,4 @@
-﻿// EXAMPLE: set_and_get
+// EXAMPLE: set_and_get
 // HIDE_START
 using System;
 using StackExchange.Redis;
@@ -7,7 +7,6 @@ namespace Doc;
 
 public class SetGetExample
 {
-    //TODO: Let the parser remove the annotations
     [Fact]
     public void run()
     {
@@ -25,11 +24,11 @@ public class SetGetExample
         if (value.HasValue)
             Console.WriteLine("The name of the bike is: " + value + ".");
 
-        //REMOVE_START
+        // REMOVE_START
         Assert.True(status);
         Assert.Equal("Process 134", value.ToString());
-        //REMOVE_END
-    //HIDE_START
+        // REMOVE_END
+    // HIDE_START
     }
 }
-//HIDE_END
+// HIDE_END
